@@ -16,3 +16,6 @@ a todo app which has delete and update function
 # ProjSnaps
 
 <img src="./webassets/cap1.PNG">
+<img src="./webassets/cap2.PNG">
+<img src="./webassets/cap3.PNG">
+<img src="./webassets/cap4.PNG">
