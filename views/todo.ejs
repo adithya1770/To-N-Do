@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>
+            to'N'do
+        </title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"/>
+    </head>
+    <body>
+       <main class="container">
+    <div>
+        <p id="text1">Happy Working!</p>
+        <br>
+        <center>
+        <input type="text" id="texter" name="postdoc">
+        <button onclick="postnote()">POST</button>
+        <button onclick="delete1()">DELETE/UPDATE</button>
+        <button onclick="seeMyList()">SEE MY LIST</button>
+        </center>
+        <br>
+        <br>
+        <div>
+            <ul>
+                <li>Type the chore and click on <em>post</em> to post a <em>note</em></li>
+                <li>Click on <em>see my list</em> to view todo</li>
+            </ul>
+        </div>
+    </div>
+    </main>
+    </body>
+    <script>
+        function postnote(){
+            //let text1 = document.getElementById("text1");
+            let textVal = document.getElementById("texter").value;
+            //text1.textContent = textVal;
+            window.location.href = '/todo/'+textVal;
+        }
+        function seeMyList(){
+            window.location.href="/tasker";
+        }
+        function delete1(){
+            window.location.href="/delete";
+        }
+    </script>
+    </body>
+</html>

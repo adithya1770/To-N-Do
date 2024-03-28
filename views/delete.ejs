@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"/>
+    </head>
+    <body>
+        <main class="container">
+        <center>Enter Item to Delete<input type="text" id="deleter">
+        <center><button onclick="delete1()">DELETE</button></center>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <center>Enter Updated Item<input type="text" id="updater">
+        <center>Enter which Element to Update<input type="text" id="updater1">
+        <center><button onclick="update()">UPDATE</button></center>
+    </body>
+    <script>
+        function delete1(){
+            const element = document.getElementById("deleter").value;
+            window.location.href="/delete/"+element;
+        }
+        function update(){
+            const element = document.getElementById("updater").value;
+            const element1 = document.getElementById("updater1").value;
+            window.location.href="/update/"+element+"/"+element1;
+        }
+    </script>
+</html>
